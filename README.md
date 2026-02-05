@@ -70,7 +70,8 @@
 
 ## Архитектурная диаграмма
 
-![[Pasted image 20260205233043.png]]
+<img width="1171" height="525" alt="image" src="https://github.com/user-attachments/assets/ec4964fb-9ccc-4e19-a290-7bb7c26e4d8d" />
+
 
 ## Программный комплекс
 ### Структура проекта
@@ -106,10 +107,12 @@ adb connect localhost:5555
 
 ## Пример запуска
 Поднятый контейнер и подключение к redroid + установка на него тг
-![[Pasted image 20260206000707.png]]
+<img width="2560" height="745" alt="image" src="https://github.com/user-attachments/assets/769b4646-4c18-4d1d-95d1-42de666ed637" />
+
 
 ответ с id и ключом в base64
-![[Pasted image 20260206000801.png]]
+<img width="548" height="774" alt="image" src="https://github.com/user-attachments/assets/b2761993-abb9-4a45-b7ca-19c4b3a8511f" />
+
 
 ## Анализ реализации
 В ходе тестирования на официальном клиенте telegram были получены следующие результаты:
@@ -122,7 +125,8 @@ adb connect localhost:5555
 
 
 При попытке использовать извлеченный auth_key в стороннем клиенте (библиотека `gotd`) сервер возвращает ошибку 401 AUTH_KEY_UNREGISTERED или AUTH_KEY_INVALID.
-![[Pasted image 20260206001524.png]]
+<img width="1034" height="32" alt="image" src="https://github.com/user-attachments/assets/59750988-025f-4f18-8460-74aa603be16a" />
+
 
 Официальный клиент telegram для Android использует механизм Android Keystore System. Ключ авторизации, хранящийся в tgnet.dat, дополнительно зашифрован аппаратным ключом устройства.  
 Прямое извлечение файла не позволяет расшифровать его содержимое.
